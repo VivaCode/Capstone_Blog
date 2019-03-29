@@ -1,0 +1,4 @@
+[build]
+  base    = "site"
+  command = "make"
+  publish = "site/public"
