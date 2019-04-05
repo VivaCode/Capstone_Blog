@@ -1,0 +1,15 @@
+---
+title: Sprint Two
+date: "2019-04-05"
+---
+Part 1 - Individual Accomplishments this Sprint
+My individual work this week focused on search functionality. We initially decided to use ElasticSearch for full text search but with research, I found it can only be used with firebase Blaze payment level. So I went in search of a replacement. The Firebase documentation suggests using Algolia. So I started researching that. I got an acount, set up a key and then began pursuing how to use it. I was able to create a search bar on the front end in a manner I've never used. Instead of having name and value it utililizes type "search" that auto creates a search bar and allows for input. I was pretty excited about this. I've also been able to create an env file to hold the Algolia key and am still looking for more functionality in actually searching.
+
+Detailed Analysis
+The team spent several days trying to integrate Travis CI with our front end to create continuous deployment. We installed several packages and tried different configurations but it maintained errors. After three days it was suggested that we try Netlify instead. I had the most experience with it, so I took on deployment. Initially, there were errors with exit code 127. I added a toml file, which did not resolve it. It turned out because of the way the files were set up in the main web folder, it required "frontend/client" to be used as the build file path. Yarn needed to be removed because the scripts were not yarn start but react-scripts build. 
+
+Part 2 - Weekly Reflection
+
+When Caitlin and I started building this team, we picked the best developers we could. I'm seeing that could have been a mistake. Sometimes the best developers lack soft skills. This week was especially trying bc it feels like there is so much pressure to perform. Several team members had been very frustrated about the process of bringing in all these new pieces of software and needing to learn so much so fast. I feel very responsible for a lot of that frustration because I'm the one who suggested we use Firebase. It has been good for iOS, minus some tweaks we had to make in the syntax. (They cannot utilize kebab case, only snake.) Firebase has been very challenging for the web team because none of us came with experience. I offered to take a course and learn it, but the preference I've seen so far is to just barrel in and brut force code. In a way that makes sense, we needed a backend to use and we only have 5 weeks. 
+
+Overall, I think we're working well. The process is a lot slower than I would like; than I think everyone would like. I want to slow down and take time to learn the material in depth, then apply it. We really don't have time for that. I try to be accomodating. I know that I would like to be spending my time digging into the search functionality but the general consensus is leaning towards group programming one thing at a time. I feel like I mostly have a voice, I am learning that there are appropiate times to use it. I can't control everything, nor can I sit back and wait because then I get frustrated when one person controls things. 
