@@ -6,6 +6,7 @@ module.exports = {
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
       linkedin: `emily-mcclanahan-9a816940`,
+      GitHub: `VivaCode`,
     },
   },
   plugins: [
