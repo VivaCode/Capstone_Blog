@@ -15,15 +15,19 @@ https://trello.com/c/RpFmjNwD/115-breadcrumb-tab-nav-component-w-back-to-categor
 https://trello.com/c/hnhophLR/157-tablet-and-mobile-styles-for-breadcrumbs
 
 ![related pull requests](./prs.png)
+
 There were 13 PRs associated with this weeks work on the breadcrumbs or tab navigator. What looks simple turned into a complicated piece of the site. The first challenge arose in isolating each tab for styling. The original data came through as an array including a listing of "all" for all resources under the main category. The styling had a set of cards below the nav showing all. The nav itself showed the main category button and the subsequent sub categories but didn't include displaying all.
 
 ![code to isolate all as main category button](./maincatcode.png)
+
 Instead of setting all as a tab to display none. It was isolated and turned into the Main Category button with javascript. Then the remaining tabs were displayed and the main cat btn was stylable.
 
 ![if statements to add individual images to matching tab](./addsimages.png)
+
 Because of the uniqueness of the array not allowing isolation of an individual tab to add images to each that were not housed in the database, if statements were utilized. Admittedly, it was not the DRYest way to complete this objective, but it was a workable solution. 
 
 ![media query for tablet only with id](./tablettabstyle.png)
+
 The responsive design required the use of an id on two indivual sub categories to isolate them and move them for proper alignment when downsizing to tablet only. Special attention was taken to counter the cascade and remove this id styling for the mobile view.
 
 
